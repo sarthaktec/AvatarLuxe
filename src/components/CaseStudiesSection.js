@@ -5,11 +5,10 @@ import Image from 'next/image'
 const caseStudies = [
   {
     src: '/images/side-view-doctor-checking-patient-before-rhinoplasty.jpg',
-    title: 'leaser Treatment',
+    title: 'Laser Treatment',
     location: 'London, UK',
     date: 'December 2, 2024',
   },
-  // Add more items if needed
   {
     src: '/images/side-view-doctor-checking-patient-before-rhinoplasty.jpg',
     title: 'Hair Transplant',
@@ -32,7 +31,7 @@ const caseStudies = [
 
 export default function CaseStudiesScrolly() {
   return (
-    <div className="relative top-20 pb-[100vh]">
+    <div className="relative top-20 pb-[25vh] space-y-20">
       {caseStudies.map((item, index) => (
         <div
           key={index}
@@ -48,7 +47,7 @@ export default function CaseStudiesScrolly() {
             />
 
             {/* Overlay text */}
-            <div className="absolute top-0 left-0 w-full h-full p-8 text-white flex flex-col justify-between">
+            <div className="absolute top-0 left-0 w-full h-full mb-90 p-8 text-white flex flex-col justify-between">
               <h1 className="text-5xl font-light">{item.title}</h1>
               <div className="flex flex-col gap-2">
                 <span className="bg-white text-black bg-opacity-20 px-3 py-1 rounded-full text-sm w-max">

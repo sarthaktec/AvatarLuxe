@@ -97,7 +97,7 @@ export default function Home() {
         className="w-full min-h-screen flex text-center justify-center items-center bg-black"
       >
         <motion.h1
-          className="text-white text-[130px] font-[Six_Caps] font-black"
+          className="text-4xl md:text-6xl lg:text-9xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative"
           style={{ letterSpacing }}
         >
           AVATARLUXE
@@ -112,7 +112,7 @@ export default function Home() {
             <TabsTrigger value="about" className="text-lg border-[#ffffff45] border-0 border-t-2 p-10 mx-5 rounded-none">About Us</TabsTrigger>
             <TabsTrigger value="testimonial" className="text-lg border-[#ffffff45] border-0 border-t-2 p-10 mx-5 rounded-none">Testimonial</TabsTrigger>
           </TabsList>
-          <TabsContent value="about" className="p-40 text-4xl font-medium">
+          <TabsContent value="about" className="p-5 md:p-40 text-4xl font-medium">
             Redefine your beauty with our accomplished Plastic Surgeons, Aesthetic physicians & Skin specialists at Avatarluxe™ in Bangalore.
             No matter what your Hair, skin and aesthetic goals are, our tremendously skilled Professionals will treat you accurately under the right protocol.
             <Button className="text-sm mt-10 border-2 rounded-full border-amber-50">
@@ -206,7 +206,7 @@ export default function Home() {
         >
         </HorizontalScrollCarousel>
         <section className="h-auto bg-black text-white py-20">
-          <h1 className="text-5xl font-bold px-10 pb-10 text-center">Our Partners</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">Our Partners</h1>
 
           <div className="grid grid-cols-4 gap-0 px-10">
             {[
@@ -285,12 +285,12 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-black text-white min-h-screen">
-          <h2 className="text-5xl font-bold px-10 pb-10 text-center">Our Case Studies</h2>
+          <h2 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">Our Case Studies</h2>
           <CaseStudiesSection />
         </section>
         <section className="bg-black text-white py-20">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-4xl font-semibold text-center tracking-wider font-serif">OUR TEAM</h2>
+            <h2 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">OUR TEAM</h2>
             <p className="text-center text-gray-400 mt-2 text-sm tracking-wide">
               — THE CREATORS OF YOUR NEXT LOOK —
             </p>

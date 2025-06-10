@@ -33,7 +33,7 @@ const HorizontalScrollCarousel = ({
       style={{ height: totalHeight }}
     >
       {title && (
-        <h2 className="text-5xl font-bold mb-10 px-10 pt-10 pb-10 sticky top-0 bg-black z-10 text-center">
+        <h2 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">
           {title}
         </h2>
       )}
