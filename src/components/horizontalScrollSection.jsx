@@ -5,13 +5,11 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const HorizontalScrollCarousel = ({
   items = [],
-  heightPerCard = 100, // 100vh per card to allow full scroll
-  cardWidth = 100,
+  heightPerCard = 100,
+  cardWidth = 300, // default card width in px
   title,
 }) => {
   const targetRef = useRef(null);
-
-  // Total scroll height = # of cards * heightPerCard (in vh)
   const totalHeight = `${items.length * heightPerCard}vh`;
 
   const { scrollYProgress } = useScroll({
@@ -19,12 +17,7 @@ const HorizontalScrollCarousel = ({
     offset: ['start start', 'end end'],
   });
 
-  // Move horizontally by 100% of total width (based on item count)
-  const x = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ['2%', '-40%']
-  );
+  const x = useTransform(scrollYProgress, [0, 1], ['2%', `-${(items.length - 1) * 100}%`]);
 
   return (
     <section
@@ -33,7 +26,7 @@ const HorizontalScrollCarousel = ({
       style={{ height: totalHeight }}
     >
       {title && (
-        <h2 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">
+        <h2 className="text-4xl md:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-20 pt-10">
           {title}
         </h2>
       )}
@@ -43,7 +36,8 @@ const HorizontalScrollCarousel = ({
           {items.map((item) => (
             <div
               key={item.id}
-              className={`min-w-[${cardWidth}px] h-[600px] bg-white rounded-3xl overflow-hidden shadow-lg relative group`}
+              style={{ minWidth: `${cardWidth}px`, height: '600px' }}
+              className="bg-white rounded-3xl overflow-hidden shadow-lg relative group"
             >
               <img
                 src={item.image}

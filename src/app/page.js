@@ -115,6 +115,7 @@ export default function Home() {
           <TabsContent value="about" className="p-6 md:p-20 text-lg md:text-4xl font-medium text-center">
             Redefine your beauty with our accomplished Plastic Surgeons, Aesthetic physicians & Skin specialists at Avatarluxe™ in Bangalore.
             No matter what your Hair, skin and aesthetic goals are, our tremendously skilled Professionals will treat you accurately under the right protocol.
+            <br/>
             <Button className="text-sm mt-10 border-2 rounded-full border-amber-50">
               Book a free consulting
               <LuArrowUpRight />

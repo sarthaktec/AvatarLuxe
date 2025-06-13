@@ -1,6 +1,5 @@
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
-import { MenuBar } from "@/components/MenuBar";
 
 const henkenGrotesk = Hanken_Grotesk({
   subsets: ['latin'],
