@@ -97,7 +97,7 @@ export default function Home() {
         className="w-full min-h-screen flex text-center justify-center items-center bg-black"
       >
         <motion.h1
-          className="text-4xl md:text-6xl lg:text-9xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative px-4"
           style={{ letterSpacing }}
         >
           AVATARLUXE
@@ -108,11 +108,11 @@ export default function Home() {
       
       <section id="cursor-section" className='w-full'>
         <Tabs defaultValue="about" className="w-full">
-          <TabsList className="w-full flex justify-between">
+          <TabsList className="w-full flex flex-wrap justify-between">
             <TabsTrigger value="about" className="text-lg border-[#ffffff45] border-0 border-t-2 p-10 mx-5 rounded-none">About Us</TabsTrigger>
             <TabsTrigger value="testimonial" className="text-lg border-[#ffffff45] border-0 border-t-2 p-10 mx-5 rounded-none">Testimonial</TabsTrigger>
           </TabsList>
-          <TabsContent value="about" className="p-5 md:p-40 text-4xl font-medium">
+          <TabsContent value="about" className="p-6 md:p-20 text-lg md:text-4xl font-medium text-center">
             Redefine your beauty with our accomplished Plastic Surgeons, Aesthetic physicians & Skin specialists at Avatarluxe™ in Bangalore.
             No matter what your Hair, skin and aesthetic goals are, our tremendously skilled Professionals will treat you accurately under the right protocol.
             <Button className="text-sm mt-10 border-2 rounded-full border-amber-50">
@@ -208,7 +208,7 @@ export default function Home() {
         <section className="h-auto bg-black text-white py-20">
           <h1 className="text-4xl md:text-6xl lg:text-6xl font-semibold text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 z-10 relative mb-10">Our Partners</h1>
 
-          <div className="grid grid-cols-4 gap-0 px-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 sm:px-10">
             {[
               {
                 name: 'LuxeSkin Co.',
